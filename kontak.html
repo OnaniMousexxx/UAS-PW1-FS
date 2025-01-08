@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Kami</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <style>
+        html, body {
+            height: 100%; /* Mengatur tinggi dokumen agar mengambil seluruh viewport */
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        body {
+            background-color: #f8f9fa;
+        }
+        main {
+            flex-grow: 1; /* Membuat konten utama mengambil sisa ruang */
+        }
+        .contact-header {
+            background: linear-gradient(45deg, #6c757d, #495057);
+            color: #fff;
+            padding: 50px 0;
+        }
+        .contact-header h1 {
+            font-size: 2.5rem;
+        }
+        .contact-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .contact-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        .icon {
+            font-size: 2rem;
+            margin-right: 10px;
+        }
+        .contact-logo {
+            width: 80px; /* Menyesuaikan ukuran */
+            height: 80px; /* Menyesuaikan ukuran */
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+        footer {
+            background-color: #212529;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<header class="contact-header text-center">
+    <h1>Hubungi Kami</h1>
+    <p>Kami siap membantu Anda. Silakan pilih salah satu kontak di bawah ini.</p>
+</header>
+
+<main class="container py-5">
+    <div class="row text-center">
+        <!-- WhatsApp -->
+        <div class="col-md-4 mb-4">
+            <div class="card contact-card shadow border-0">
+                <div class="card-body">
+                    <img src="wa.png" alt="WhatsApp Logo" class="contact-logo">
+                    <h5 class="card-title">WhatsApp</h5>
+                    <p class="card-text">Hubungi kami melalui WhatsApp untuk respons cepat.</p>
+                    <a href="https://wa.me/6287761974119" target="_blank" class="btn btn-success">Chat via WhatsApp</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Instagram -->
+        <div class="col-md-4 mb-4">
+            <div class="card contact-card shadow border-0">
+                <div class="card-body">
+                    <img src="ig.png" alt="Instagram Logo" class="contact-logo">
+                    <h5 class="card-title">Instagram</h5>
+                    <p class="card-text">Ikuti kami di Instagram untuk update terbaru.</p>
+                    <a href="https://instagram.com/mfzzz___" target="_blank" class="btn btn-danger">Lihat Instagram</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Website -->
+        <div class="col-md-4 mb-4">
+            <div class="card contact-card shadow border-0">
+                <div class="card-body">
+                    <img src="web.png" alt="Website Logo" class="contact-logo">
+                    <h5 class="card-title">Website</h5>
+                    <p class="card-text">Kunjungi website resmi kami untuk informasi lebih lanjut.</p>
+                    <a href="https://www.websiteanda.com" target="_blank" class="btn btn-primary">Kunjungi Website</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="text-center py-3 bg-dark text-light">
+    <p>&copy; 2025 FS Fikri E-Store. Bringing Stories to Life, One Page at a Time.</p>
+</footer>
+    
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
+</body>
+</html>
